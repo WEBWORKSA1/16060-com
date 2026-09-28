@@ -1,0 +1,38 @@
+name: Build & publish 16060.com
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install calendar libraries
+        run: pip install sxtwl lunardate
+      - name: Generate calendar data and pages
+        run: |
+          python src/gen_data.py
+          python src/gen_fest.py
+          python src/build.py
+          grep -rli "gmail" _site && { echo "Email exposed in build!"; exit 1; } || echo "Email check passed"
+      - name: Publish to gh-pages branch (GitHub Pages, free plan)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: "Deploy 16060.com"
