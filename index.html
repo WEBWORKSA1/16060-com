@@ -1,0 +1,67 @@
+---
+layout: default
+title: '16060 — Chinese Lucky Numbers, Zodiac &amp; Auspicious Timing Tools'
+description: 'Free Chinese lucky number analyzer, zodiac finder, 60-year cycle, BaZi four pillars, auspicious date finder, lunar converter and festival countdowns.'
+canonical: 'https://16060.com/'
+og_type: website
+root: ''
+scripts: [caldata.js, calc.js, festivals.js, tools.js]
+schema: '<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "16060", "url": "https://16060.com/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does 16060 mean?", "acceptedAnswer": {"@type": "Answer", "text": "Read aloud as “1 · 60 · 60”, it maps to time — one hour is sixty minutes of sixty seconds — and to the Chinese 60-year cycle (甲子). The digits carry positive associations: 6 (liù) evokes “smooth” (六六大顺), 0 wholeness, and 1-6 echoes 一路 (“all the way”). There is no 4. See our full explainer."}}, {"@type": "Question", "name": "Are the tools free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every calculator is free, with no sign-up. The optional Lucky Blueprint asks for your email so we can send your report and follow-ups; unsubscribe any time."}}, {"@type": "Question", "name": "How accurate is the zodiac calculator?", "acceptedAnswer": {"@type": "Answer", "text": "It uses astronomically computed Lunar New Year dates and solar terms for 1921–2060, so people born in January or February get the right animal. BaZi pillars change at the solar terms and are computed to the day."}}, {"@type": "Question", "name": "Is this fortune-telling?", "acceptedAnswer": {"@type": "Answer", "text": "We present Chinese number symbolism and calendar traditions for cultural education and entertainment. Nothing here is financial, legal or medical advice."}}, {"@type": "Question", "name": "Can I advertise, sponsor or partner?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — see the Advertise page, or use the inquiry link at the top of every page."}}]}</script>'
+---
+
+
+<section class="hero"><div class="wrap hero-grid">
+<div><span class="eyebrow">一 · 六十 · 六十 &nbsp;|&nbsp; Luck · Time · Culture</span>
+<h1>Find your lucky numbers, your sign and your <span style="color:var(--gold)">perfect timing</span>.</h1>
+<p class="lead">Free calculators for Chinese lucky numbers, the zodiac, the 60-year cycle, BaZi and auspicious dates, plus world clocks and festival countdowns. Built on real calendar data.</p>
+<div class="hero-cta"><a class="btn lg" href="tools/lucky-number.html">Score my number</a><a class="btn gold lg" href="consult.html#blueprint">Free Lucky Blueprint</a></div>
+<form class="news" action="tools/lucky-number.html" method="get" style="max-width:520px" aria-label="Quick lucky number check">
+<label class="sr" for="qn">Number to check</label><input id="qn" name="n" inputmode="numeric" placeholder="Try a phone, plate or price, e.g. 16060" required><button class="btn gold sm" type="submit">Check</button></form>
+<div class="trust" style="margin-top:18px"><span>Free, no sign-up</span><span>1921–2060 calendar data</span><span>Shareable results</span></div></div>
+<div class="hero-art" id="wheel-art"></div>
+<script>(function(){var s='<svg class="wheel" viewBox="0 0 400 400" role="img" aria-label="The sixty-year cycle wheel"><defs><radialGradient id="wg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#d7322b" stop-opacity=".35"/><stop offset="1" stop-color="#d7322b" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="196" fill="url(#wg)"/><circle cx="200" cy="200" r="190" fill="none" stroke="#e3b04b" stroke-opacity=".5"/><circle cx="200" cy="200" r="150" fill="none" stroke="#e3b04b" stroke-opacity=".35"/><circle cx="200" cy="200" r="96" fill="none" stroke="#d7322b" stroke-opacity=".6" stroke-width="2"/>';
+for(var i=0;i<60;i++){var a=(i*6-90)*Math.PI/180,m=i%5===0,r1=m?166:176;s+='<line x1="'+(200+r1*Math.cos(a)).toFixed(1)+'" y1="'+(200+r1*Math.sin(a)).toFixed(1)+'" x2="'+(200+190*Math.cos(a)).toFixed(1)+'" y2="'+(200+190*Math.sin(a)).toFixed(1)+'" stroke="#e3b04b" stroke-opacity="'+(m?0.9:0.45)+'" stroke-width="'+(m?2:1)+'"/>'}
+var b="子丑寅卯辰巳午未申酉戌亥";for(var j=0;j<12;j++){var t=(j*30-90)*Math.PI/180;s+='<text x="'+(200+124*Math.cos(t)).toFixed(1)+'" y="'+(200+124*Math.sin(t)+9).toFixed(1)+'" text-anchor="middle" class="br" font-family="Noto Serif SC,serif" font-size="26">'+b[j]+'</text>'}
+s+='<text x="200" y="196" text-anchor="middle" font-family="Noto Serif SC,serif" font-size="44" font-weight="700" fill="#e3b04b">16060</text><text x="200" y="228" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" letter-spacing="4" class="sub">1 · 60 · 60</text></svg>';
+document.getElementById("wheel-art").innerHTML=s})();</script></div></section>
+
+<section style="padding-top:28px"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Today</span><h2>Today's almanac at a glance</h2></div><a href="tools/auspicious-dates.html">Find auspicious dates →</a></div><div data-today></div></div></section>
+
+<div class="wrap"><div class="ad-slot" data-slot="top" aria-label="Advertisement"></div></div>
+
+<section class="alt"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Free tools</span><h2>Nine calculators, one purpose: better timing</h2></div><p>Each result has its own link you can share, and a print-ready layout.</p></div>
+<div class="grid g3"><a class="card hover reveal" href="tools/lucky-number.html"><div class="ic">八</div><h3>Lucky Number Analyzer</h3><p>Score any phone, plate, address or price</p></a><a class="card hover reveal" href="tools/zodiac-finder.html"><div class="ic">肖</div><h3>Zodiac Finder</h3><p>Your animal, element & yin-yang by exact date</p></a><a class="card hover reveal" href="tools/compatibility.html"><div class="ic">合</div><h3>Zodiac Compatibility</h3><p>Harmony, triads & clashes for any two signs</p></a><a class="card hover reveal" href="tools/sixty-year-cycle.html"><div class="ic">甲</div><h3>60-Year Cycle Table</h3><p>Every 甲子 year with stem, branch & element</p></a><a class="card hover reveal" href="tools/lunar-converter.html"><div class="ic">月</div><h3>Lunar Date Converter</h3><p>Gregorian ⇄ Chinese lunar calendar</p></a><a class="card hover reveal" href="tools/four-pillars.html"><div class="ic">柱</div><h3>Four Pillars (BaZi)</h3><p>Your birth chart & five-element balance</p></a><a class="card hover reveal" href="tools/auspicious-dates.html"><div class="ic">吉</div><h3>Auspicious Date Finder</h3><p>Good days for weddings, openings & moves</p></a><a class="card hover reveal" href="tools/clocks-timers.html"><div class="ic">时</div><h3>Clocks & Timers · 1·60·60</h3><p>World clocks, shichen, stopwatch & timer</p></a><a class="card hover reveal" href="tools/countdown.html"><div class="ic">倒</div><h3>Countdown Builder</h3><p>Lunar New Year & custom shareable countdowns</p></a></div></div></section>
+
+<section><div class="wrap"><div class="section-head"><div><span class="eyebrow">十二生肖</span><h2>The 12 zodiac animals</h2></div><p>Personality, lucky numbers and colours, best matches and the year ahead for every sign.</p></div><div class="zgrid"><a class="z" href="zodiac/rat.html"><b>鼠</b><span>🐀 Rat</span><small>1984, 1996, 2008</small></a><a class="z" href="zodiac/ox.html"><b>牛</b><span>🐂 Ox</span><small>1985, 1997, 2009</small></a><a class="z" href="zodiac/tiger.html"><b>虎</b><span>🐅 Tiger</span><small>1986, 1998, 2010</small></a><a class="z" href="zodiac/rabbit.html"><b>兔</b><span>🐇 Rabbit</span><small>1987, 1999, 2011</small></a><a class="z" href="zodiac/dragon.html"><b>龙</b><span>🐉 Dragon</span><small>1988, 2000, 2012</small></a><a class="z" href="zodiac/snake.html"><b>蛇</b><span>🐍 Snake</span><small>1989, 2001, 2013</small></a><a class="z" href="zodiac/horse.html"><b>马</b><span>🐎 Horse</span><small>1990, 2002, 2014</small></a><a class="z" href="zodiac/goat.html"><b>羊</b><span>🐐 Goat</span><small>1991, 2003, 2015</small></a><a class="z" href="zodiac/monkey.html"><b>猴</b><span>🐒 Monkey</span><small>1992, 2004, 2016</small></a><a class="z" href="zodiac/rooster.html"><b>鸡</b><span>🐓 Rooster</span><small>1993, 2005, 2017</small></a><a class="z" href="zodiac/dog.html"><b>狗</b><span>🐕 Dog</span><small>1994, 2006, 2018</small></a><a class="z" href="zodiac/pig.html"><b>猪</b><span>🐖 Pig</span><small>1995, 2007, 2019</small></a></div>
+<p class="center" style="margin-top:20px"><a class="btn ghost" href="tools/zodiac-finder.html">Not sure of your sign? Find it by exact birth date →</a></p></div></section>
+
+<section class="alt"><div class="wrap"><div class="cta-band reveal" id="lead">
+<div><span class="eyebrow" style="color:#ffe6a8">Free · instant · personal</span><h2>Get your personal Lucky Blueprint</h2>
+<p>Your zodiac and element, your Four Pillars chart, your lucky numbers and your 6 strongest days in the next 60. Generated in seconds and ready to print.</p>
+<div class="trust" style="color:#ffdcd0"><span>No payment</span><span>Printable PDF</span><span>Unsubscribe anytime</span></div></div>
+<div><a class="btn gold lg block" href="consult.html#blueprint">Create my blueprint →</a><p class="small" style="margin:10px 0 0;text-align:center">Planning a wedding, launch or move? <a style="color:#ffe6a8" href="consult.html#consult">Book a pro consultation</a></p></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="section-head"><div><span class="eyebrow">Countdown</span><h2>Lunar New Year 2027 — Year of the Fire Goat 丁未</h2></div><a href="tools/countdown.html">All festival countdowns →</a></div>
+<div class="countdown" data-countdown="2027-02-06T00:00:00"></div>
+<p class="muted" style="margin-top:12px">Saturday 6 February 2027. The Fire Horse year (丙午) began on 17 February 2026.</p></div></section>
+
+<section class="alt"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Learn</span><h2>Guides worth reading</h2></div><a href="learn/index.html">All guides →</a></div>
+<div class="grid g3">
+<a class="card hover" href="learn/what-does-16060-mean.html"><span class="chip gold">Explainer</span><h3 style="margin-top:10px">What does 16060 mean?</h3><p>Time, the 60-year cycle and the symbolism of 1, 6 and 0.</p></a>
+<a class="card hover" href="learn/chinese-lucky-numbers-guide.html"><span class="chip gold">Guide</span><h3 style="margin-top:10px">Chinese lucky numbers 0–9</h3><p>Why 8 prospers, 4 is avoided, and what 168, 520 and 1314 mean.</p></a>
+<a class="card hover" href="learn/lucky-number-economy.html"><span class="chip gold">Economy</span><h3 style="margin-top:10px">The lucky-number economy</h3><p>US$280k phone numbers, HK$26M licence plates and 5-digit domains.</p></a>
+</div></div></section>
+
+<section><div class="wrap"><div class="section-head"><div><span class="eyebrow">Watch</span><h2>Videos</h2></div><a href="videos.html">Video library →</a></div><div class="videos" data-videos="3"></div></div></section>
+
+<div class="wrap"><div class="ad-slot" data-slot="inContent" aria-label="Advertisement"></div></div>
+
+<section class="alt"><div class="wrap grid g3">
+<div class="card"><div class="ic">🏆</div><h3>Win in our contest</h3><p>Share your lucky-number story for a share of the prize pool.</p><p style="margin-top:12px"><a href="contests.html">Enter the contest →</a></p></div>
+<div class="card"><div class="ic">🧧</div><h3>Send a red envelope</h3><p>Help keep every tool free, fund new features and pay for prizes.</p><p style="margin-top:12px"><a href="support.html">Support 16060 →</a></p></div>
+<div class="card"><div class="ic">✍️</div><h3>Work with us</h3><p>We're looking for writers, video creators, developers and consultants.</p><p style="margin-top:12px"><a href="careers.html">See open roles →</a></p></div>
+</div></section>
+
+<section><div class="narrow"><h2 class="center">Questions</h2><details><summary>What does 16060 mean?</summary><p>Read aloud as “1 · 60 · 60”, it maps to time — one hour is sixty minutes of sixty seconds — and to the Chinese 60-year cycle (甲子). The digits carry positive associations: 6 (liù) evokes “smooth” (六六大顺), 0 wholeness, and 1-6 echoes 一路 (“all the way”). There is no 4. See our full explainer.</p></details><details><summary>Are the tools free?</summary><p>Yes. Every calculator is free, with no sign-up. The optional Lucky Blueprint asks for your email so we can send your report and follow-ups; unsubscribe any time.</p></details><details><summary>How accurate is the zodiac calculator?</summary><p>It uses astronomically computed Lunar New Year dates and solar terms for 1921–2060, so people born in January or February get the right animal. BaZi pillars change at the solar terms and are computed to the day.</p></details><details><summary>Is this fortune-telling?</summary><p>We present Chinese number symbolism and calendar traditions for cultural education and entertainment. Nothing here is financial, legal or medical advice.</p></details><details><summary>Can I advertise, sponsor or partner?</summary><p>Yes — see the Advertise page, or use the inquiry link at the top of every page.</p></details></div></section>
+
