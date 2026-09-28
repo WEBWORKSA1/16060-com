@@ -1,0 +1,18 @@
+# GitHub Pages (Jekyll) config for 16060.com
+title: "16060"
+exclude:
+  - README.md
+  - docs
+  - .gitignore
+  - src/build.py
+  - src/cny.json
+  - src/fest.json
+  - src/gen_data.py
+  - src/gen_fest.py
+  - src/jekyllize.py
+  - src/layout.py
+  - src/pages_biz.py
+  - src/pages_home_tools.py
+  - src/pages_learn.py
+  - src/pages_legal.py
+  - src/pages_zodiac.py
