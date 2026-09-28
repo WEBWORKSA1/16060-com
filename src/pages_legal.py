@@ -1,0 +1,55 @@
+from layout import page
+
+
+def L(slug, title, desc, body):
+    page(f"legal/{slug}.html", title, desc, f'<section><div class="narrow prose">{body}<p class="small muted" style="margin-top:30px">Last updated: 28 September 2026. Questions: <a href="#" data-mail="Legal question — 16060.com">contact us</a> or use the <a href="../contact.html">contact form</a>.</p></div></section>',
+         hero=(title, desc), crumbs=[("Legal", f"legal/{slug}.html"), (title, f"legal/{slug}.html")], priority="0.3")
+
+
+def build():
+    L("disclaimer", "Trademark & Copyright Disclosure", "How 16060 uses the number 16060, third-party marks, embedded media and our own content.", '''
+<h2>1. The name “16060”</h2><p>“16060” is a number. This website uses it <b>descriptively as a domain name</b> (16060.com), referring to “1 · 60 · 60” (one hour of sixty minutes and sixty seconds) and to the sixty-year cycle of the Chinese calendar. We do not claim exclusive rights in the number 16060 as such.</p>
+<p>The number 16060 is also used independently by unrelated organisations and systems around the world, for example as <b>telephone helpline or short-code numbers, postal codes and product or part numbers</b>. <b>16060.com is not affiliated with, endorsed by, sponsored by or connected to any such organisation, service, government body or product</b>, and nothing on this site should be read as suggesting otherwise. If you are looking for a service that uses the number 16060 in your country, please contact that service directly.</p>
+<h2>2. Our trademarks and branding</h2><p>The 16060 logo, site design, tool interfaces, original text, graphics and code are © 2026 16060.com, all rights reserved except where stated. You may link to any page and share results using the share buttons. Please don't copy substantial portions of our content or tools without written permission.</p>
+<h2>3. Third-party trademarks</h2><p>All other product names, logos, brands and trademarks mentioned on this site (including YouTube™, Google™, AdSense™, PayPal™ and any company named in our articles) are the property of their respective owners. Their use is for identification and reference only and does not imply endorsement or affiliation.</p>
+<h2>4. Embedded videos and quoted sources</h2><p>Videos are embedded using YouTube's official embedded player under YouTube's Terms of Service. Copyright in each video remains with its creator, and the video is hosted by YouTube, not by us. Short quotations and statistics are attributed and linked to their sources for commentary and educational purposes.</p>
+<h2>5. Traditional cultural content</h2><p>Chinese zodiac animals, heavenly stems, earthly branches, the sexagenary cycle, solar terms, number symbolism, idioms and festival traditions are part of the public cultural heritage and are not owned by anyone. Our specific explanations, data presentation and software are our own work.</p>
+<h2>6. Not professional advice</h2><p>Content and tools are for cultural education and entertainment. They are not financial, investment, legal, medical, psychological or other professional advice. Scores and forecasts are traditional interpretations, not predictions of fact.</p>
+<h2>7. Copyright concerns / takedown</h2><p>If you believe content on this site infringes your copyright or trademark, send a notice through our <a href="../contact.html?topic=Copyright">contact form</a> (topic: Copyright / takedown). Include your contact details, the work concerned, the URL of the material, and a good-faith statement. We respond promptly and remove infringing material where appropriate.</p>''')
+
+    L("privacy", "Privacy Policy", "What we collect, why, and your choices.", '''
+<h2>What we collect</h2><ul><li><b>Information you submit</b> in forms: name, email, optional phone, birth date or hour, messages and applications. It's used only to respond to you, deliver what you requested (e.g. your Blueprint copy) and, if you opt in, send updates.</li><li><b>Tool inputs</b> (numbers, dates) are processed <b>in your browser</b>. They are not sent to us unless you submit a form.</li><li><b>Cookies and similar technologies</b> for preferences (theme, consent), analytics and advertising. See the <a href="cookies.html">Cookie Policy</a>.</li></ul>
+<h2>Service providers</h2><p>Forms are delivered through a form-processing service (FormSubmit). Payments are processed by PayPal or other payment providers under their own privacy policies; we never see your card details. Ads may be served by Google AdSense, and videos are embedded from YouTube (privacy-enhanced mode until you press play).</p>
+<h2>Google advertising</h2><p>Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this and other websites. Google's use of advertising cookies enables it and its partners to serve ads based on your visits. You can opt out of personalised advertising at <a href="https://www.google.com/settings/ads" rel="noopener" target="_blank">Google Ads Settings</a> or <a href="https://www.aboutads.info" rel="noopener" target="_blank">aboutads.info</a>. If you choose “Essential only”, we request non-personalised ads.</p>
+<h2>Retention and rights</h2><p>We keep inquiries for as long as needed to handle them and for reasonable business records. You may request access, correction or deletion of your data, or withdraw consent, at any time through the contact form. Residents of Canada (PIPEDA / Québec Law 25), the EU/UK (GDPR) and California (CCPA/CPRA) have additional rights, which we honour.</p>
+<h2>Children</h2><p>This site is not directed to children under 13. We don't knowingly collect their information.</p>''')
+
+    L("terms", "Terms of Use", "The rules for using 16060.com.", '''
+<h2>Use of the site</h2><p>By using 16060.com you agree to these terms. You may use the tools and content for personal and internal business purposes. Don't misuse the site: no scraping at scale, interfering with its operation, or submitting unlawful or infringing content.</p>
+<h2>No professional advice; no guarantees</h2><p>All tools, scores, forecasts and consultations are cultural and entertainment guidance. They are provided “as is”, without warranties of any kind. You're responsible for your own decisions.</p>
+<h2>Consultations</h2><p>Consultations are arranged with independent practitioners in our partner network. Scope, price and delivery are confirmed in writing before any payment.</p>
+<h2>Donations</h2><p>Donations and memberships are voluntary contributions to an independent website. They are not charitable donations and are not tax-deductible. One-time donations can be refunded on request within 14 days.</p>
+<h2>User submissions</h2><p>When you submit a story, video link or other content, you confirm it's yours to share and grant 16060 a non-exclusive, worldwide, royalty-free licence to publish it with credit.</p>
+<h2>Limitation of liability</h2><p>To the maximum extent permitted by law, 16060.com is not liable for indirect or consequential losses arising from use of the site.</p>
+<h2>Changes and law</h2><p>We may update these terms, and the date below will change. These terms are governed by the laws of the Province of Québec and the federal laws of Canada applicable therein.</p>''')
+
+    L("cookies", "Cookie Policy", "Which cookies we use and how to control them.", '''
+<table><tr><th>Type</th><th>Purpose</th><th>Examples</th></tr>
+<tr><td>Essential</td><td>Remember your theme, consent choice and dismissed pop-ups (browser local storage)</td><td>theme, consent</td></tr>
+<tr><td>Analytics</td><td>Understand which pages and tools are used (only if you accept all)</td><td>Google Analytics 4</td></tr>
+<tr><td>Advertising</td><td>Serve and measure ads; personalised only if you accept all</td><td>Google AdSense</td></tr>
+<tr><td>Embedded media</td><td>Load YouTube videos when you press play</td><td>youtube-nocookie.com</td></tr></table>
+<p>Change your choice at any time by clearing this site's data in your browser. The consent banner will then reappear.</p>''')
+
+    L("contest-rules", "Official Contest Rules", "Official rules for the 16060 Lucky Number Story Contest.", '''
+<p><b>NO PURCHASE OR PAYMENT NECESSARY TO ENTER OR WIN. A purchase or donation will not increase your chances of winning.</b></p>
+<h2>1. Sponsor</h2><p>The contest is run by 16060.com (“Sponsor”). Contact: via the <a href="../contact.html">contact form</a>.</p>
+<h2>2. Eligibility</h2><p>Open to individuals who are 18 or older (or the age of majority in their place of residence) at the time of entry. Void where prohibited or restricted by law. Employees and contractors of the Sponsor and their immediate families are not eligible.</p>
+<h2>3. Entry period</h2><p>From publication until <b>31 January 2027, 11:59 pm Eastern Time</b>. Late entries will not be accepted.</p>
+<h2>4. How to enter</h2><p>Complete the entry form on the <a href="../contests.html">contest page</a> with an original, true story of 100–600 words. Limit one (1) entry per person. Entries that are plagiarised, offensive, defamatory or that infringe third-party rights are disqualified.</p>
+<h2>5. Judging</h2><p>This is a <b>contest of skill</b>, not a lottery. Entries are judged by the Sponsor's editorial panel on originality (40%), storytelling (30%) and cultural insight (30%). Referrals do not change scores. The panel's decisions are final.</p>
+<h2>6. Prizes</h2><ul><li>Grand prize (1): US$160.60 and one Pro Blueprint reading (approximate value US$100)</li><li>Second prize (1): US$60.60</li><li>Third prize (1): US$16.06</li></ul><p>Total approximate prize value: US$337.26. Prizes are paid by PayPal or electronic transfer within 30 days of verification. Prizes are not transferable. Winners are responsible for any taxes.</p>
+<h2>7. Winner notification</h2><p>Potential winners are notified by email by 6 February 2027 and must respond within 14 days, or an alternate winner may be chosen. <b>Canadian residents</b> must correctly answer a time-limited, mathematical skill-testing question before being declared a winner. Winners may be asked to sign a declaration of eligibility and a release.</p>
+<h2>8. Québec residents</h2><p>Any litigation respecting the conduct or organisation of a publicity contest may be submitted to the Régie des alcools, des courses et des jeux for a ruling. Any litigation respecting the awarding of a prize may be submitted to the Régie only for the purpose of helping the parties reach a settlement.</p>
+<h2>9. Publicity and licence</h2><p>Entrants grant the Sponsor a non-exclusive licence to publish their entry, first name and city/country with credit, without further compensation, where permitted by law.</p>
+<h2>10. Privacy and general</h2><p>Personal information is used to administer the contest per our <a href="privacy.html">Privacy Policy</a>. The Sponsor may cancel or modify the contest if it cannot run as planned, in accordance with applicable law. This contest is in no way sponsored, endorsed or administered by, or associated with, YouTube, Google, PayPal, Meta, TikTok or any social platform.</p>''')
