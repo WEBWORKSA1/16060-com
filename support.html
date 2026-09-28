@@ -1,0 +1,74 @@
+---
+layout: default
+title: 'Support 16060 — Donate a Red Envelope'
+description: 'Support free Chinese culture and timing tools with a one-time red envelope or monthly membership. Funds operations, promotion, talent and contest prizes.'
+canonical: 'https://16060.com/support.html'
+og_type: website
+root: ''
+scripts: []
+schema: '<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://16060.com/"}, {"@type": "ListItem", "position": 2, "name": "Support", "item": "https://16060.com/support.html"}]}</script>'
+---
+<section class="page-hero"><div class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a> / <span>Support</span></nav><h1>Support 16060 <span class='zh' style='color:var(--red)'>红包</span></h1><p class="lead">Donations fund operations, promotion, new talent and contest prizes.</p></div></section>
+
+<section><div class="wrap grid g2" style="align-items:start">
+<div><span class="eyebrow">🧧 Send a red envelope</span><h2>Keep 16060 free, independent and growing</h2>
+<p class="lead">Every tool here is free. Your support pays for hosting and data, new features, promotion and marketing, hiring writers and creators, and the prizes in our contests.</p>
+<div class="card" style="margin:18px 0"><div style="display:flex;justify-content:space-between;align-items:end"><div><small class="muted">Monthly operations goal</small><div class="stat" id="raised">$0</div></div><small class="muted" id="goal">of $6,060</small></div><div class="meter" style="margin-top:10px"><span id="meter" style="width:0%"></span></div><p class="small muted" style="margin:8px 0 0"><span id="supporters-n">0</span> supporters this month</p></div>
+<h3>Where your support goes</h3><div class="bars">
+<div class="bar"><span>Operations</span><i><span style="width:35%;background:var(--gold)"></span></i><b>35%</b></div>
+<div class="bar"><span>Promotion</span><i><span style="width:25%;background:var(--red)"></span></i><b>25%</b></div>
+<div class="bar"><span>Talent</span><i><span style="width:25%;background:var(--jade)"></span></i><b>25%</b></div>
+<div class="bar"><span>Prizes</span><i><span style="width:15%;background:var(--water)"></span></i><b>15%</b></div></div>
+<p class="small muted" style="margin-top:8px">Operations: hosting, data and tools · Promotion: marketing and outreach · Talent: writers, video creators, developers · Prizes: contest prizes and community events.</p></div>
+
+<div class="panel"><h3>One-time red envelope</h3><div class="tiers" id="tiers">
+<button class="tier" data-amt="6"><b>$6</b><small>Smooth 顺</small></button>
+<button class="tier on" data-amt="18"><b>$18</b><small>Prosper 发</small></button>
+<button class="tier" data-amt="60"><b>$60</b><small>Full cycle 甲子</small></button>
+<button class="tier" data-amt="88"><b>$88</b><small>Double luck</small></button>
+<button class="tier" data-amt="168"><b>$168</b><small>一路发</small></button>
+<button class="tier" data-amt="0"><b>Custom</b><small>Any amount</small></button></div>
+<label style="margin-top:12px">Amount (USD) <input type="number" id="amt" min="1" value="18"></label>
+<label style="margin-top:10px">Purpose <select id="purpose"><option>General support</option><option>Operations & hosting</option><option>Promotions & marketing</option><option>Hiring talent</option><option>Contest prizes</option></select></label>
+<div class="grid" style="gap:10px;margin-top:14px"><button class="btn gold lg block" id="paypal-once">Give with PayPal</button><div id="alt-pay"></div></div>
+<p class="small muted center" style="margin:10px 0 0">Secure checkout on PayPal. Cards are accepted without a PayPal account.</p></div>
+</div></section>
+
+<section class="alt"><div class="wrap"><div class="section-head"><div><span class="eyebrow">Membership</span><h2>Join the 16060 Circle</h2></div><p>Monthly support, priced on our numbers. Cancel any time from your PayPal account.</p></div>
+<div class="grid g3">
+<div class="card plan"><span class="chip">Friend</span><div class="price">$6<small>/mo</small></div><ul><li>Supporter wall listing</li><li>Monthly lucky-days digest</li><li>Our sincere thanks 谢谢</li></ul><button class="btn ghost block" data-sub="6" data-name="16060 Circle — Friend">Join monthly</button></div>
+<div class="card plan pop"><span class="chip gold">Most popular</span><div class="price">$16<small>/mo</small></div><ul><li>Everything in Friend</li><li>Ad-light experience (on request)</li><li>Early access to new tools</li><li>Bonus contest entries</li></ul><button class="btn gold block" data-sub="16" data-name="16060 Circle — Patron">Join monthly</button></div>
+<div class="card plan"><span class="chip red">Champion</span><div class="price">$60<small>/mo</small></div><ul><li>Everything in Patron</li><li>Quarterly mini-reading</li><li>Name or logo on a tool page</li><li>Vote on the next tool we build</li></ul><button class="btn ghost block" data-sub="60" data-name="16060 Circle — Champion">Join monthly</button></div>
+</div></div></section>
+
+<section><div class="wrap grid g2" style="align-items:start">
+<div><h2>Supporter wall</h2><div id="wall" class="grid" style="gap:10px"></div></div>
+<div class="panel"><h3>Pledge, sponsor or pay another way</h3><p class="muted">Prefer a bank transfer, Interac, Alipay or WeChat Pay, or want to sponsor a contest prize or a tool? Tell us and we'll send payment details.</p>
+<form class="form" data-form data-subject="Donation pledge / sponsorship" data-done="Thank you for your generosity! We'll email you payment details and a receipt.">
+<div class="row"><label>Name <input name="name" required></label><label>Email <input type="email" name="email" required></label></div>
+<div class="row"><label>Amount <input name="amount" placeholder="e.g. $160"></label><label>Type <select name="type"><option>One-time donation</option><option>Monthly support</option><option>Sponsor a contest prize</option><option>Sponsor a tool page</option><option>Corporate sponsorship</option></select></label></div>
+<label>Message for the supporter wall <span class="opt">(optional)</span><input name="wall_message" maxlength="120"></label>
+<label class="check"><input type="checkbox" name="show_on_wall" value="yes"> Show my first name on the supporter wall</label>
+<input class="hp" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="check"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted about my request and accept the <a href="legal/privacy.html">Privacy Policy</a>.</label><button class="btn" type="submit">Send pledge</button></form></div></div></section>
+<section class="alt"><div class="narrow"><h2 class="center">Donation FAQ</h2>
+<details><summary>Is my donation tax-deductible?</summary><p>No. 16060 is not a registered charity, so support is a voluntary contribution to an independent website and is not tax-deductible.</p></details>
+<details><summary>Can I get a refund?</summary><p>Contact us within 14 days and we'll refund a one-time donation, no questions asked. Memberships can be cancelled any time.</p></details>
+<details><summary>Can my company sponsor instead?</summary><p>Yes. Sponsorships include visibility, so see <a href="advertise.html">Advertise &amp; Sponsor</a>.</p></details></div></section>
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+  var S=window.SITE, cur=S.currency||"USD", amt=document.getElementById("amt");
+  document.getElementById("raised").textContent="$"+(S.fundRaised||0).toLocaleString();
+  document.getElementById("goal").textContent="of $"+(S.fundGoal||6060).toLocaleString();
+  document.getElementById("meter").style.width=Math.min(100,(S.fundRaised||0)/(S.fundGoal||6060)*100)+"%";
+  document.getElementById("supporters-n").textContent=(S.supporters||[]).length;
+  var wall=document.getElementById("wall");
+  wall.innerHTML=(S.supporters||[]).length?S.supporters.map(function(s){return '<div class="card"><b>'+s.name+'</b> <span class="chip gold">$'+s.amount+'</span><p>'+(s.msg||"")+'</p></div>'}).join(""):'<div class="card"><p>🧧 Be the first name on our wall. Every red envelope counts.</p></div>';
+  document.querySelectorAll(".tier").forEach(function(t){t.addEventListener("click",function(){document.querySelectorAll(".tier").forEach(function(x){x.classList.remove("on")});t.classList.add("on");if(+t.dataset.amt){amt.value=t.dataset.amt}else{amt.value="";amt.focus()}})});
+  function pp(params){var u="https://www.paypal.com/cgi-bin/webscr?"+Object.keys(params).map(function(k){return k+"="+encodeURIComponent(params[k])}).join("&");window.open(u,"_blank","noopener")}
+  document.getElementById("paypal-once").addEventListener("click",function(){var a=parseFloat(amt.value);if(!a||a<1){toast("Enter an amount",false);return}
+    if(S.stripeLinks&&S.stripeLinks[String(a)]){window.open(S.stripeLinks[String(a)],"_blank","noopener");return}
+    pp({cmd:"_donations",business:window.__route(),item_name:"16060.com — "+document.getElementById("purpose").value,amount:a.toFixed(2),currency_code:cur,no_shipping:1})});
+  document.querySelectorAll("[data-sub]").forEach(function(b){b.addEventListener("click",function(){pp({cmd:"_xclick-subscriptions",business:window.__route(),item_name:b.dataset.name,a3:b.dataset.sub,p3:1,t3:"M",src:1,currency_code:cur,no_shipping:1})})});
+  if(S.buyMeACoffee){document.getElementById("alt-pay").innerHTML='<a class="btn ghost block" href="'+S.buyMeACoffee+'" target="_blank" rel="noopener">☕ Buy Me a Coffee</a>'}
+});
+</script>
