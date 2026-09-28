@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+{% if page.is404 %}<script>document.write('<base href="'+(location.hostname.indexOf("github.io")>-1?"/"+location.pathname.split("/")[1]+"/":"/")+'">')</script>{% endif %}
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+<link rel="canonical" href="{{ page.canonical }}">
+<meta name="theme-color" content="#b71c1c">
+<meta property="og:type" content="{{ page.og_type }}"><meta property="og:site_name" content="16060">
+<meta property="og:title" content="{{ page.title }}"><meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ page.canonical }}"><meta property="og:image" content="https://16060.com/src/static/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ page.root }}src/static/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ page.root }}src/static/assets/img/favicon.svg">
+<link rel="manifest" href="{{ page.root }}manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ page.root }}src/static/assets/css/style.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+{{ page.schema }}
+</head>
+<body data-root="{{ page.root }}">
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership — <a href="https://web.works/contact" target="_blank" rel="noopener">web.works/contact</a></div>
+<header class="site-header"><nav class="wrap nav" aria-label="Main">
+<a class="logo" href="{{ page.root }}index.html" aria-label="16060 home"><span class="logo-mark">60</span><span>16060<small>Luck · Time · Culture</small></span></a>
+<ul class="menu">
+<li class="dd"><button aria-expanded="false">Tools ▾</button><div class="dd-panel"><a href="{{ page.root }}tools/lucky-number.html"><b class="zh" style="color:var(--red)">八</b><div>Lucky Number Analyzer<span>Score any phone, plate, address or price</span></div></a><a href="{{ page.root }}tools/zodiac-finder.html"><b class="zh" style="color:var(--red)">肖</b><div>Zodiac Finder<span>Your animal, element & yin-yang by exact date</span></div></a><a href="{{ page.root }}tools/compatibility.html"><b class="zh" style="color:var(--red)">合</b><div>Zodiac Compatibility<span>Harmony, triads & clashes for any two signs</span></div></a><a href="{{ page.root }}tools/sixty-year-cycle.html"><b class="zh" style="color:var(--red)">甲</b><div>60-Year Cycle Table<span>Every 甲子 year with stem, branch & element</span></div></a><a href="{{ page.root }}tools/lunar-converter.html"><b class="zh" style="color:var(--red)">月</b><div>Lunar Date Converter<span>Gregorian ⇄ Chinese lunar calendar</span></div></a><a href="{{ page.root }}tools/four-pillars.html"><b class="zh" style="color:var(--red)">柱</b><div>Four Pillars (BaZi)<span>Your birth chart & five-element balance</span></div></a><a href="{{ page.root }}tools/auspicious-dates.html"><b class="zh" style="color:var(--red)">吉</b><div>Auspicious Date Finder<span>Good days for weddings, openings & moves</span></div></a><a href="{{ page.root }}tools/clocks-timers.html"><b class="zh" style="color:var(--red)">时</b><div>Clocks & Timers · 1·60·60<span>World clocks, shichen, stopwatch & timer</span></div></a><a href="{{ page.root }}tools/countdown.html"><b class="zh" style="color:var(--red)">倒</b><div>Countdown Builder<span>Lunar New Year & custom shareable countdowns</span></div></a><a href="{{ page.root }}tools/index.html"><div><b>All tools →</b></div></a></div></li>
+<li><a href="{{ page.root }}zodiac/index.html">Zodiac</a></li>
+<li><a href="{{ page.root }}learn/index.html">Learn</a></li>
+<li><a href="{{ page.root }}festivals.html">Festivals</a></li>
+<li><a href="{{ page.root }}videos.html">Videos</a></li>
+<li class="dd"><button aria-expanded="false">Community ▾</button><div class="dd-panel"><a href="{{ page.root }}contests.html"><div>Contests & Prizes<span>Enter the Lucky Number Story contest</span></div></a><a href="{{ page.root }}support.html"><div>Support 16060<span>Red-envelope donations & memberships</span></div></a><a href="{{ page.root }}careers.html"><div>Careers & Talent<span>Write, film, build and consult with us</span></div></a><a href="{{ page.root }}advertise.html"><div>Advertise & Sponsor<span>Placements, sponsorships & partnerships</span></div></a><a href="{{ page.root }}about.html"><div>About<span>Why 1 · 60 · 60</span></div></a><a href="{{ page.root }}contact.html"><div>Contact<span>Questions, partnerships, press</span></div></a></div></li>
+</ul>
+<div class="nav-actions"><a class="btn sm" href="{{ page.root }}consult.html">Free Blueprint</a>
+<button class="icon-btn" data-theme-toggle aria-label="Toggle dark or light mode"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor"/></svg></button>
+<button class="icon-btn burger" data-menu aria-label="Menu" aria-expanded="false">☰</button></div>
+</nav></header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="site-footer"><div class="wrap">
+<div class="fgrid">
+<div><a class="logo" href="{{ page.root }}index.html"><span class="logo-mark">60</span><span>16060<small>Luck · Time · Culture</small></span></a>
+<p class="muted small" style="margin-top:14px">One hour · sixty minutes · sixty seconds. One cycle · sixty years. Free tools and guides to Chinese lucky numbers, the zodiac and auspicious timing.</p>
+<form class="news" data-form data-subject="Newsletter signup" data-done="You're on the list — watch your inbox for the next lucky-days digest.">
+<label class="sr" for="nl-email">Email</label><input id="nl-email" type="email" name="email" placeholder="Your email for lucky-days alerts" required>
+<input type="hidden" name="list" value="newsletter"><input class="hp" name="_honey" tabindex="-1" autocomplete="off">
+<button class="btn sm" type="submit">Join</button></form></div>
+<div><h4>Tools</h4><ul><li><a href="{{ page.root }}tools/lucky-number.html">Lucky Number Analyzer</a></li><li><a href="{{ page.root }}tools/zodiac-finder.html">Zodiac Finder</a></li><li><a href="{{ page.root }}tools/compatibility.html">Zodiac Compatibility</a></li><li><a href="{{ page.root }}tools/sixty-year-cycle.html">60-Year Cycle Table</a></li><li><a href="{{ page.root }}tools/lunar-converter.html">Lunar Date Converter</a></li><li><a href="{{ page.root }}tools/four-pillars.html">Four Pillars (BaZi)</a></li><li><a href="{{ page.root }}tools/auspicious-dates.html">Auspicious Date Finder</a></li></ul></div>
+<div><h4>Explore</h4><ul><li><a href="{{ page.root }}zodiac/index.html">12 Zodiac Animals</a></li><li><a href="{{ page.root }}learn/index.html">Guides</a></li><li><a href="{{ page.root }}festivals.html">Festivals</a></li><li><a href="{{ page.root }}videos.html">Videos</a></li><li><a href="{{ page.root }}learn/what-does-16060-mean.html">What 16060 means</a></li><li><a href="{{ page.root }}consult.html">Free Blueprint &amp; Consults</a></li></ul></div>
+<div><h4>Community</h4><ul><li><a href="{{ page.root }}contests.html">Contests</a></li><li><a href="{{ page.root }}support.html">Support / Donate</a></li><li><a href="{{ page.root }}careers.html">Careers</a></li><li><a href="{{ page.root }}advertise.html">Advertise</a></li><li><a href="{{ page.root }}about.html">About</a></li><li><a href="{{ page.root }}contact.html">Contact</a></li></ul></div>
+<div><h4>Legal</h4><ul><li><a href="{{ page.root }}legal/disclaimer.html">Trademark &amp; Copyright</a></li><li><a href="{{ page.root }}legal/privacy.html">Privacy</a></li><li><a href="{{ page.root }}legal/terms.html">Terms</a></li><li><a href="{{ page.root }}legal/cookies.html">Cookies</a></li><li><a href="{{ page.root }}legal/contest-rules.html">Contest Rules</a></li></ul></div>
+</div>
+<div class="legal-line"><span>© <span data-year>2026</span> 16060.com. Content for cultural education and entertainment. “16060” is used descriptively as a domain name; no affiliation with any other organisation using this number. <a href="{{ page.root }}legal/disclaimer.html">Disclosure</a>.</span>
+<span><a href="https://web.works/contact" target="_blank" rel="noopener">Acquire / sponsor this site</a></span></div>
+</div></footer>
+<div class="modal" id="exit-modal" hidden><div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="exit-t">
+<button class="modal-x" data-close aria-label="Close">×</button>
+<div class="zh" style="font-size:3rem;color:var(--red)">福</div>
+<h2 id="exit-t">Before you go — your free Lucky Blueprint</h2>
+<p class="muted">Your zodiac, element, four pillars, lucky numbers and best dates for the next 60 days — generated instantly, free.</p>
+<a class="btn gold lg block" href="{{ page.root }}consult.html#blueprint">Get my free blueprint</a></div></div>
+<div class="sticky-cta"><p>🧧 Free personal Lucky Blueprint</p><a class="btn sm" href="{{ page.root }}consult.html#blueprint">Get it</a><button data-dismiss aria-label="Dismiss">×</button></div>
+<script src="{{ page.root }}src/static/assets/js/config.js" defer></script>
+<script src="{{ page.root }}src/static/assets/js/app.js" defer></script>
+{% for s in page.scripts %}<script src="{{ page.root }}src/static/assets/js/{{ s }}" defer></script>{% endfor %}
+</body>
+</html>
